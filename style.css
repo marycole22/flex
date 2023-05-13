@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    
+}
+body{
+    background:  linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+}
+.back{
+    margin:  4rem;
+    margin-top: 1.2rem;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    cursor: pointer;
+    background-color: #241e162b;
+   
+}
+
+.flex ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 1.5rem;
+    background-color:  #241e162b;
+    margin-top: 1.5rem;
+    letter-spacing: 2px;
+    border:  solid black;
+    
+    
+}
+.flex li{
+    flex: 3;
+
+}
+.flex .social{
+    flex: 1;
+
+}
+
+.img{
+    background-color:  #241e162b ;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2.8rem;
+}
+
+.details{
+    background-color:  #241e162b;
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+
+}
+.signup{
+    background-color:  #241e162b ;
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    text-align: center;
+
+}
+.signup .text input{
+    height: 2rem;
+    border: none;
+    color: black;
+    border-radius: 7px;
+    margin: 5px;
+    width: 150px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.signup .text #sub{
+       
+    height: 40px;
+    width: 100px;
+    background-color: lightgrey;
+
+}
+footer{
+    background-color:  #241e162b;
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    text-align: center;
+}
+footer span{
+    text-shadow: 0 0 15px #e67be6,
+                 0 0 25px #9f1e34,
+                 0 0 20px #1a1add,
+                 0 0 30px #bddf77;
+}
+
+.flex .toggleNav{
+    background-color:  #241e162b;
+    padding: 0.8rem;
+    font-size: 1rem;
+    display: none ;
+    justify-content: center;
+}
+
+@media all and (max-width:1000px){
+    .flex ul{
+        flex-wrap: wrap;
+    }
+    .flex li{
+        flex: 1 1 50%;
+        text-align: center;
+    }
+    .flex .social{
+        flex: 1 1 25%;
+        margin-top: 0.8rem;
+
+    }
+    .img img{
+        width: 300px;
+    }
+    
+}
+
+@media all and (max-width:500px){
+    .flex ul{
+        margin-bottom: 0.8rem;
+    }
+    .flex li{
+        flex-basis: 100%;
+        margin: 1rem;
+        text-align: center;
+
+    }
+    .back{
+        display: flex;
+        flex-direction: column;
+    }
+    .back > *{
+        order: 9999;
+    }
+    .flex{
+        order: 1;
+    }
+
+    .flex .toggleNav{
+        text-align: center;
+        display: block;
+        margin-bottom: 0.9rem;
+    }
+
+    .flex ul{
+        display: none;
+    }
+    .flex ul.open{
+        display: flex;
+    }
+
+    .top{
+        order: 2;
+    }
+    .details{
+        order: 3;
+    }
+    .signup{
+        order: 4;
+    }
+
+    .signup .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+
+}
